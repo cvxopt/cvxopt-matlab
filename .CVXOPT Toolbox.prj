@@ -1,0 +1,88 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration file="${PWD}/CVXOPT Toolbox.prj" location="${PWD}" name="CVXOPT Toolbox" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>CVXOPT Toolbox</param.appname>
+    <param.authnamewatermark>Martin S. Andersen and Lieven Vandenberghe</param.authnamewatermark>
+    <param.email>martin.skovgaard.andersen@gmail.com, vandenbe@ee.ucla.edu</param.email>
+    <param.company />
+    <param.summary>MATLAB interface to CVXOPT, a free software package for convex optimization based on the Python programming language</param.summary>
+    <param.description>Documentation available at the CVXOPT website: http://www.cvxopt.org</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}/CVXOPT Toolbox.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid></param.guid>
+    <param.exclude.filters>.*
+img
+img/*
+examples
+examples/*
+cvxopt_install.m
+Makefile</param.exclude.filters>
+    <param.examples />
+    <param.demosxml />
+    <param.apps />
+    <param.registered.apps />
+    <param.docs />
+    <param.getting.started.guide>${PROJECT_ROOT}/doc/GettingStarted.mlx</param.getting.started.guide>
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <unset>
+      <param.company />
+      <param.screenshot />
+      <param.version />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.examples />
+      <param.demosxml />
+      <param.apps />
+      <param.registered.apps />
+      <param.docs />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+    </unset>
+    <fileset.rootdir>
+      <file>${PWD}</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}/LICENSE.md</file>
+      <file>${PROJECT_ROOT}/README.md</file>
+      <file>${PROJECT_ROOT}/conelp.m</file>
+      <file>${PROJECT_ROOT}/cvxopt_init.m</file>
+      <file>${PROJECT_ROOT}/cvxopt_test.m</file>
+      <file>${PROJECT_ROOT}/cvxopt_version.m</file>
+      <file>${PROJECT_ROOT}/doc</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PWD}" name="CVXOPT Toolbox.mltbx" optional="false">${PWD}/CVXOPT Toolbox.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>${MATLAB_ROOT}</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix></unix>
+      <mac></mac>
+      <windows></windows>
+      <win2k></win2k>
+      <winxp></winxp>
+      <vista></vista>
+      <linux></linux>
+      <solaris></solaris>
+      <osver></osver>
+      <os32></os32>
+      <os64></os64>
+      <arch></arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
