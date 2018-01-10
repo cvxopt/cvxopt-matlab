@@ -26,8 +26,8 @@ This script should be executed *before* Python is loaded (see [`pyversion`](http
 
 ## Installation
 
-### Method 1: Add-On Explorer
-On MATLAB’s Home tab, click on "Add-Ons" and select “Get Add-Ons”. This will open the Add-On Explorer. Search for "CVXOPT" and click on "Add".
+### Method 1: Add-On Explorer (MATLAB R2015b or later)
+On MATLAB’s Home tab, click on "Add-Ons" and select “Get Add-Ons”. This will open the Add-On Explorer. Search for "CVXOPT Toolbox" and click on "Add".
 
 ### Method 2: Manual Installation
 Double-click on `CVXOPT Toolbox.mltbx` and click on the "Install" button.
