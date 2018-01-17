@@ -15,7 +15,7 @@ Toolbox license: BSD 3-Clause
 
 The version of the Python interpreter used by MATLAB can be changed with the [`pyversion`](http://www.mathworks.com/help/matlab/ref/pyversion.html) function.
 
-### Known bugs
+### Known issues
 The Linux version of MATLAB may crash when calling the toolbox function `conelp` because of a library conflict: MATLAB's MKL library is used in place of the BLAS library that CVXOPT otherwise uses when loaded in Python, causing a segmentation fault. This issue is similar to the library conflict reported in [this thread](https://www.mathworks.com/matlabcentral/answers/265247-importing-custom-python-module-fails) on MATLAB Answers, and the same workarounds seem to work. In particular, by executing `py.sys.setdlopenflags(int32(10))` before Python is loaded, the library conflict is avoided. The toolbox includes a script that will do this if the platform is Linux:
 
 ```matlab
@@ -26,16 +26,13 @@ This script should be executed *before* Python is loaded (see [`pyversion`](http
 
 ## Installation
 
-### Method 1: Add-On Explorer (MATLAB R2015b or later)
-On MATLAB’s Home tab, click on "Add-Ons" and select “Get Add-Ons”. This will open the Add-On Explorer. Search for "CVXOPT Toolbox" and click on "Add".
-
-### Method 2: Manual Installation
+### Method 1: Manual Installation
 Double-click on `CVXOPT Toolbox.mltbx` and click on the "Install" button.
 
 ![install-manually](img/install-manually.png)
 
 
-### Method 3: Terminal (MATLAB R2016a or later)
+### Method 2: Terminal (MATLAB R2016a or later)
 
 ```
 git clone https://github.com/cvxopt/cvxopt-matlab
@@ -46,7 +43,7 @@ make install
 If MATLAB is not available in the path, set `MATLAB_ROOT` to the root directory of your MATLAB installation (the appropriate path can be found with MATLAB's `matlabroot` function), i.e.,
 
 ```
-MATLAB_ROOT=/path/to/matlabroot make install
+make MATLAB_ROOT=/path/to/matlabroot install
 ```
 
 ### Uninstalling the toolbox
