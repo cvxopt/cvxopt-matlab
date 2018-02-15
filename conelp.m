@@ -168,7 +168,7 @@ end
 sol.status = char(sol.status);
 
 % Convert number of iterations to MATLAB number
-sol.iterations = sol.iterations.double;
+sol.iterations = double(sol.iterations);
 
 % Convert Python 'None' to NaN in MATLAB
 if sol.residual_as_primal_infeasibility_certificate == py.None

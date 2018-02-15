@@ -26,13 +26,16 @@ This script should be executed *before* Python is loaded (see [`pyversion`](http
 
 ## Installation
 
-### Method 1: Manual Installation
+### Method 1: Add-On Explorer (MATLAB R2015b or later)
+On MATLAB’s Home tab, click on "Add-Ons" and select “Get Add-Ons”. This will open the Add-On Explorer. Search for "CVXOPT Toolbox" and click on "Add".
+
+### Method 2: Manual Installation
 Double-click on `CVXOPT Toolbox.mltbx` and click on the "Install" button.
 
 ![install-manually](img/install-manually.png)
 
 
-### Method 2: Terminal (MATLAB R2016a or later)
+### Method 3: Terminal (MATLAB R2016a or later)
 
 ```
 git clone https://github.com/cvxopt/cvxopt-matlab
@@ -60,7 +63,7 @@ To check that the toolbox has been properly installed and is working, run the `c
 ## Documentation
 
 ### Getting Started Guide (requires MATLAB R2016a or later)
-On MATLAB’s Home tab, click on "Add-Ons" and select "Manage Add-Ons". Locate the CVXOPT Toolbox and select "View Getting Started Guide" from the drop-down menu. Alternatively, open the MATLAB Live Script located in `doc/Getting Started Guide.mlx`.
+On MATLAB’s Home tab, click on "Add-Ons" and select "Manage Add-Ons". Locate the CVXOPT Toolbox and select "View Getting Started Guide" from the drop-down menu. Alternatively, open the MATLAB Live Script located in `doc/Getting Started Guide.mlx`. The "Getting Started Guide" is also available online [here](https://se.mathworks.com/matlabcentral/fileexchange/65705-cvxopt-toolbox#examples_tab).
 
 ### Solving cone linear programs with `conelp`
 

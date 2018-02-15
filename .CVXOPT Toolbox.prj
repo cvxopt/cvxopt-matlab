@@ -7,7 +7,7 @@
     <param.summary>MATLAB interface to CVXOPT, a free software package for convex optimization based on the Python programming language</param.summary>
     <param.description>Documentation available at the CVXOPT website: http://www.cvxopt.org</param.description>
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>1.0.1</param.version>
     <param.output>${PROJECT_ROOT}/CVXOPT Toolbox.mltbx</param.output>
     <param.products.name />
     <param.products.id />
