@@ -46,7 +46,7 @@ function sol = conelp(c,G,h,dims,A,b,options)
 %   c = [-4. -5.]';
 %   G = [2 1; 1 2; -1 0; 0 -1];
 %   h = [3. 3. 0. 0.]';
-%   sol = conelp(c,G,h,dims);
+%   sol = conelp(c,G,h);
 %
 % See also CVXOPT_INIT CVXOPT_VERSION
 
