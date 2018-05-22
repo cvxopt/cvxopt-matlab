@@ -3,6 +3,10 @@ This MATLAB toolbox provides an interface to CVXOPT's [cone LP](http://cvxopt.or
 
 CVXOPT website: [http://cvxopt.org](http://cvxopt.org)
 
+[![MATLAB R2014b+](https://img.shields.io/badge/MATLAB-2014b%2B-blue.svg)](https://www.mathworks.com)
+[![Python 2.7+](https://img.shields.io/badge/Python-2.7%2B-blue.svg)](https://www.python.org)
+[![CVXOPT 1.1.9+](https://img.shields.io/badge/CVXOPT-1.1.9%2B-blue.svg)](https://www.python.org)
+
 ## License
 CVXOPT license: GPL 3
 
