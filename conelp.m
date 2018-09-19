@@ -161,7 +161,11 @@ keys = py.list(sol_cvxopt.keys());
 sol = struct();
 for k = 1:length(keys)
     key = keys.pop();
-    sol.(strrep(char(key),' ','_')) = sol_cvxopt.get(key);
+    val = sol_cvxopt.get(key);
+    if val == py.None
+        val = [];
+    end
+    sol.(strrep(char(key),' ','_')) = val;
 end
 
 % Convert status string to MATLAB character array
@@ -169,14 +173,6 @@ sol.status = char(sol.status);
 
 % Convert number of iterations to MATLAB number
 sol.iterations = double(sol.iterations);
-
-% Convert Python 'None' to NaN in MATLAB
-if sol.residual_as_primal_infeasibility_certificate == py.None
-    sol.residual_as_primal_infeasibility_certificate = nan;
-end
-if sol.residual_as_dual_infeasibility_certificate == py.None
-    sol.residual_as_dual_infeasibility_certificate = nan;
-end
 
 % Convert x,y,z,s to MATLAB arrays
 sol.x = cellfun(@double,cell(py.list(sol.x)))';
